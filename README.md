@@ -1,2 +1,2 @@
-# es_DBZ_Contact
+# es DBZ Contact
 Thème sur Dragon Ball Z pour Batocera et Retrobat
