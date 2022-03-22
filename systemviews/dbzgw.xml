@@ -7,27 +7,24 @@ author:			Polosanretro
 <theme>
 <formatVersion>7</formatVersion>
 
-
-
-<include>./../../${system.theme}/custom.xml</include>
-
+<include>./../desc/${system.theme}/custom.xml</include>
 
 	<variables>
   
-		<!-- Right illustration default variables -->		
+	
 		<x.right.color>ffffff</x.right.color>
 		<x.right.colorEnd>ffffff</x.right.colorEnd>
 		<x.right.gradientType>vertical</x.right.gradientType>
 		<x.right.reflexion>0 0</x.right.reflexion>
 
-		<!-- Right2 illustration default variables -->		
+	
 
 		<x.right2.color>ffffff</x.right2.color>
 		<x.right2.colorEnd>ffffff</x.right2.colorEnd>
 		<x.right2.gradientType>vertical</x.right2.gradientType>
 		<x.right2.reflexion>0 0</x.right2.reflexion>
 		
-		<!-- Visible default variables -->
+
 
 		<x.right.visible>true</x.right.visible>
 		<x.right2.visible>true</x.right2.visible>
@@ -35,33 +32,20 @@ author:			Polosanretro
 	</variables>
 
 
-	<include>./art/sistemas/platforms/${system.theme}/_LAYOUT_SETTINGS.xml</include>
-	<include>./art/sistemas/platforms/${system.theme}_alt/_LAYOUT_SETTINGS.xml</include>
+	<include>./art/animations/OUT_SETTINGS.xml</include>
+	<include>./art/animations/OUT_SETTINGS_alt/OUT_SETTINGS.xml</include>
 
-	<include>./art/sistemas/platforms/_assets/variables/layouts/right_layout/shift/shift_${layout.right.shift}.xml</include>
-
-
+	<include>./art/animations/right_out/shift/shift_${out.right.shift}.xml</include>
 
 
 
-
-
-<!---------- Include General Settings variables  ---------->
-
-	<include>./_THEME_SETTINGS.xml</include>
+	<include>./SETTINGS.xml</include>
 	
-
-<!---------- SKIN LINES FIX ---------->
-
-	<include>./art/sistemas/platforms/_assets/_theme_complement/skins_fix/yes.xml</include>
+	<include>./art/animations/animation_set.xml</include>
 
 
-<!---------- STORYBOARDS --------->
-	<include>./art/sistemas/platforms/_assets/_theme_complement/storyboards_subset.xml</include>
 
-	<include>./art/sistemas/platforms/${system.theme}/specifics/_SYSTEM_THEME_SETTINGS.xml</include>
-	<include>./art/sistemas/platforms/${system.theme}_alt/specifics/_SYSTEM_THEME_SETTINGS.xml</include>
-	<include>./art/sistemas/platforms/_assets/variables/specifics/${system.theme}.xml</include>
+
 
 
 
@@ -74,15 +58,15 @@ author:			Polosanretro
          <origin>0 0</origin>
          <pos>0 0</pos>
          <size>1 1</size>
-			<zIndex>35</zIndex>
+			<zIndex>1</zIndex>
 		</image> 
 
 
 
 			<image name="art_03" extra="true">
 			<path>./medias/bousole.png</path>
-			<origin>0.5 0.5</origin>
-                                 <pos>0.91 0.18</pos>
+			<origin>1 0.5</origin>
+                                 <pos>0.75 0.18</pos>
 		<size>0.07 0.10</size>
 		                <zIndex>1000</zIndex>
 
@@ -93,7 +77,7 @@ author:			Polosanretro
           <path>./medias/default/_inc/char.png</path>
 			<path>./medias/persosDBZ/${system.theme}.png</path>
 			<origin>1 0.5</origin>
-                                 <pos>0.20 0.40</pos>
+                                 <pos>0.1647 0.40</pos>
 		<size>0.127 0.36</size>
 		                <zIndex>998</zIndex>
 		<storyboard>
@@ -105,22 +89,26 @@ author:			Polosanretro
 	   <image name="logos" extra="true">
          <origin>0.5 0.5</origin>
          <size>0.22 0.52</size>
-<pos>0.500 0.69</pos>
+<pos>0.532 0.69</pos>
           <path>./medias/capsulenuage/default.png</path>
           <path>./medias/capsulenuage/${system.theme}.png</path>
          <zIndex>43</zIndex>
+	  <sound>./medias/sound/Nimbusdbz.wav</sound>
+<delay>0</delay>
+		<storyboard>
 				<animation property="scale" from="0" to="1" begin="120" duration="1475" mode="EaseOut"/>
         		<animation property="y" to="0.5" begin="2800" autoreverse="true" duration="7200" repeat="forever" mode="easyIn"/>
         		<animation property="x" to="0.5" begin="300" autoreverse="true" duration="8450" repeat="forever" mode="easyIn"/>
 
 		</storyboard>
+
       </image>
 	
 
 
 	   <image name="consoles" extra="true">
          <origin>0 0</origin>
-         <pos>0.061 0.70</pos>
+         <pos>0.032 0.70</pos>
          <size>0.11 0.13</size>
           <path>./medias/default/_inc/consoles.png</path>
          <path>./medias/retro/${system.theme}.png</path>
@@ -129,7 +117,7 @@ author:			Polosanretro
 
 	   <image name="cadresayan" extra="true">
          <origin>0 0</origin>
-         <pos>0.723 0.62</pos>
+         <pos>0.720 0.62</pos>
          <size>0.280 0.280</size>
          <path>./medias/radarsayan0.png</path>
          <zIndex>40</zIndex>
@@ -138,9 +126,9 @@ author:			Polosanretro
 
 	   <image name="cadresayan2" extra="true">
          <origin>0 0</origin>
-         <pos>0.7238 0.62</pos>
+         <pos>0.720 0.62</pos>
          <size>0.280 0.280</size>
-         <path>./medias/radarsayan3.png</path>
+         <path>./medias/radarsayan0.png</path>
          <zIndex>38</zIndex>
 <rotation>1</rotation>
       </image>
@@ -148,7 +136,7 @@ author:			Polosanretro
 
 	   <image name="oeil1" extra="true">
          <origin>0 0</origin>
-         <pos>0.73 0.626</pos>
+         <pos>0.7183 0.626</pos>
          <size>0.200 0.200</size>
          <path>./medias/default/regard2.png</path>
          <zIndex>39</zIndex>
@@ -156,7 +144,7 @@ author:			Polosanretro
 
 	   <image name="oeil" extra="true">
          <origin>0 0</origin>
-         <pos>0.455 0.626</pos>
+         <pos>0.448 0.626</pos>
          <size>0.200 0.200</size>
          <path>./medias/default/regard3.png</path>
          <zIndex>41</zIndex>
@@ -164,7 +152,7 @@ author:			Polosanretro
 
 	   <image name="ecrisayan" extra="true">
          <origin>0 0</origin>
-         <pos>0.81 0.72</pos>
+         <pos>0.8154 0.72</pos>
          <size>0.07 0.12</size>
          <path>./medias/acanoyde.png</path>
          <zIndex>40</zIndex>
@@ -178,7 +166,7 @@ author:			Polosanretro
 
 	   <image name="fond1" extra="true">
          <origin>0.5 0.5</origin>
-         <pos>0.5 0</pos>
+         <pos>0.48 0</pos>
          <size>1.15 3</size>
          <path>./medias/1224.png</path>
          <zIndex>40</zIndex>
@@ -187,7 +175,7 @@ author:			Polosanretro
 
 	   <image name="cadredia" extra="true">
          <origin>0.5 0.5</origin>
-		<pos>0.819 0.4364</pos>
+		<pos>0.818 0.4364</pos>
          <size>0.370 0.250</size>
          <path>./medias/cadrediadbz.png</path>
          <zIndex>41</zIndex>
@@ -195,39 +183,33 @@ author:			Polosanretro
 
 	   <image name="maskcad" extra="true">
          <origin>0.5 0.5</origin>
-		<pos>0.819 0.437</pos>
+		<pos>0.818 0.437</pos>
          <size>0.357 0.215</size>
          <path>./medias/mask.png</path>
          <zIndex>40</zIndex>
       </image>
 
-	<text name="info1" extra="true">
-		<fontPath>./medias/fuentes/Dragon Ball.ttf</fontPath>
-		<color>32CD32</color>
-		<alignment>left</alignment>
-		<fontSize>0.020</fontSize>
-		<lineSpacing>1</lineSpacing>
-		<size>0.32 0</size>
-		<pos>0.825 0.4</pos>
-		<glowColor>00000016</glowColor>
-		<glowSize>1</glowSize>
-		<zIndex>42</zIndex>
-      </text> 
-
-	   <image name="fcapsule" extra="true">
+	   <image name="pcadredia" extra="true">
          <origin>0.5 0.5</origin>
-         <pos>0.7465 0.1382</pos>
-         <size>0.15 0.22</size>
-         <path>./medias/capsulecorps0.png</path>
-         <zIndex>40</zIndex>
+		<pos>0.95 0.458</pos>
+         <size>0.08 0.157</size>
+         <path>./medias/mkaio.png</path>
+         <zIndex>41</zIndex>
+      </image>
+
+	   <image name="padredia" extra="true">
+         <origin>0.5 0.5</origin>
+		<pos>0.9087 0.39</pos>
+         <size>0.05 0.05</size>
+         <path>./medias/barre.png</path>
+         <zIndex>41</zIndex>
+<rotation>2</rotation>
 		<storyboard>
-        		<animation property="y" from="-1.5" begin="0.9" duration="2000" mode="linear"/>
-        		<animation property="scale" to="1.02" begin="0" autoreverse="true" duration="300" repeat="forever" mode="easyIn"/>
-        		<animation property="rotation" to="1.02" begin="90" autoreverse="true" duration="300" repeat="forever" mode="easyIn"/>
+ 
+        		<animation property="scale" to="1.5" begin="1800" autoreverse="true" duration="300" repeat="forever" mode="bump"/>
         		<animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
 		</storyboard>
       </image>
-
 
 <text name="info2" extra="true">
    		<fontPath>./medias/fuentes/Dragon Ball.ttf</fontPath>
@@ -235,10 +217,37 @@ author:			Polosanretro
         <alignment>left</alignment>
         <fontSize>0.023</fontSize>
         <lineSpacing>1</lineSpacing>
-		<size>0.35 0</size>
-		<pos>0.5 0.4</pos>
+		<size>0.035 0</size>
+		<pos>0.657 0.4</pos>
 		<zIndex>0</zIndex>
       </text>
+
+	<text name="info1" extra="true">
+		<fontPath>./medias/fuentes/Dragon Ball.ttf</fontPath>
+		<color>32CD32</color>
+		<alignment>left</alignment>
+		<fontSize>0.020</fontSize>
+		<lineSpacing>1</lineSpacing>
+		<size>0.254 0</size>
+		<pos>0.653 0.4</pos>
+		<glowColor>00000016</glowColor>
+		<glowSize>1</glowSize>
+		<zIndex>42</zIndex>
+      </text> 
+
+	   <image name="fcapsule" extra="true">
+         <origin>0.5 0.5</origin>
+         <pos>0.875 0.1382</pos>
+         <size>0.15 0.22</size>
+         <path>./medias/capsulecorps0.png</path>
+         <zIndex>40</zIndex>
+		<storyboard>
+        		<animation property="y" from="-1.5" begin="0.3" duration="2000" mode="linear"/>
+        		<animation property="scale" to="1.02" begin="0" autoreverse="true" duration="300" repeat="forever" mode="easyIn"/>
+        		<animation property="rotation" to="1.5" begin="90" autoreverse="true" duration="300" repeat="forever" mode="easyIn"/>
+        		<animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+		</storyboard>
+      </image>
 
 
 	<text name="info3" extra="true">
@@ -248,7 +257,7 @@ author:			Polosanretro
 		<fontSize>0.023</fontSize>
 		<lineSpacing>1</lineSpacing>
 		<size>0.35 0</size>
-		<pos>0.039 0.378</pos>
+		<pos>0.66 0.378</pos>
 		<glowColor>00000016</glowColor>
 		<glowSize>1</glowSize>
 		<zIndex>42</zIndex>
@@ -261,7 +270,7 @@ author:			Polosanretro
 		<fontSize>0.023</fontSize>
 		<lineSpacing>1</lineSpacing>
 		<size>0.35 0</size>
-		<pos>0.155 0.378</pos>
+		<pos>0.763 0.378</pos>
 		<glowColor>00000016</glowColor>
 		<glowSize>1</glowSize>
 		<zIndex>42</zIndex>
@@ -291,11 +300,11 @@ author:			Polosanretro
 	<text name="info5" extra="true">
 		<fontPath>./medias/fuentes/Dragon Ball.ttf</fontPath>
 		<color>32CD32</color>
-		<alignment>right</alignment>
+		<alignment>left</alignment>
 		<fontSize>0.023</fontSize>
 		<lineSpacing>1</lineSpacing>
 		<size>0.35 0</size>
-		<pos>0.65 0.378</pos>
+		<pos>0.7 0.378</pos>
 		<glowColor>00000016</glowColor>
 		<glowSize>1</glowSize>
 		<zIndex>42</zIndex>
@@ -303,58 +312,56 @@ author:			Polosanretro
 
 
 		<text name="info6" extra="true">
-			<text>Idioma Selecionado: PT(BR) Languages</text>
+<visible>false</visible>
 		</text>
 
 		<text name="info6" extra="true" region="PTBR">
-			<text>Idioma Selecionado: PT(BR) Languages</text>
+<visible>false</visible>
 		</text>
 		
 				<text name="info6" extra="true" region="EN">
-			<text>Selected Language: EN(US)</text>
+<visible>false</visible>
 		</text>
 		
 				<text name="info6" extra="true" region="ES">
-			<text>Idioma Seleccionado: ES Languages</text>
+<visible>false</visible>
 		</text>
 		
 				<text name="info6" extra="true" region="FR">
-			<text>Langue Choisie: FR</text>
+<visible>false</visible>
 		</text>
 
 	<text name="info6" extra="true">
-		<fontPath>./medias/fuentes/Dragon Ball.ttf</fontPath>
-		<color>39CAD5</color>
-		<alignment>left</alignment>
-		<fontSize>0.0147</fontSize>
-		<lineSpacing>1</lineSpacing>
-		<size>0.35 0</size>
-		<pos>0.85 0.055</pos>
-		<glowColor>00000016</glowColor>
-		<glowSize>0.6</glowSize>
-		<zIndex>42</zIndex>
+<visible>false</visible>
       </text>
+
+
 
 		<video name="backgroundvideo" extra="true">
           <path>./medias/default/_inc/noise.mp4</path>
 	     <path>{random}</path> 
-         <pos>0.7287 0.664</pos>
-         <size>0.2123 0.2308</size>
+         <pos>0.725 0.65854</pos>
+         <size>0.2126 0.2323</size>
          <origin>0 0</origin>
          <delay>0</delay>
          <showSnapshotNoVideo>false</showSnapshotNoVideo>
          <showSnapshotDelay>false</showSnapshotDelay>
+      <loops>1</loops>
+      <roundCorners>0.02</roundCorners>
 		 <zIndex>39</zIndex>
-<rotation>1</rotation>
 		 </video>
-	  
-	  
+
+    <image name="randomImage" extra="true">
+ <visible>false</visible> 
+    </image>
+
+
 	   <image name="Njeux" extra="true">
          <origin>0.5 0.5</origin>
 		<pos>0.21 0.95</pos>
          <size>0.260 0.097</size>
          <path>./medias/gokukame.png</path>
-         <zIndex>43</zIndex>
+         <zIndex>100</zIndex>
 		<storyboard>
         		<animation property="scale" to="1.0025" begin="0" autoreverse="true" duration="250" repeat="forever" mode="bump"/>
         		<animation property="color" to="999999" begin="0" autoreverse="true" duration="5" repeat="forever" mode="linear"/>
@@ -384,10 +391,12 @@ author:			Polosanretro
 </text>
 
 
-      <carousel name="systemcarousel">
+
+
+     <carousel name="systemcarousel">
         <type>vertical_wheel</type>
-        <pos>0 0.007</pos>
-		<size>0.382 1</size>
+        <pos>0 -0.01</pos>
+		<size>0.34 1</size>
         <logoScale>1.559895832</logoScale>
         <logoSize>0.13 0.13</logoSize>
         <color>00000000</color>
@@ -402,7 +411,7 @@ author:			Polosanretro
 
 		<image name="logo, logo1">
           <path>./medias/default/_inc/system.png</path>
-	<path>./medias/logo/DBZfusion/${system.theme}.png</path>
+	<path>./medias/logo/DBZboules/${system.theme}.png</path>
 			<linearSmooth>true</linearSmooth>
 
 	</image>
@@ -413,11 +422,11 @@ author:			Polosanretro
 
 	<image name="rightillustration_ghost2" extra="true">
 		<linearSmooth>true</linearSmooth>
-		<path>./art/sistemas/platforms/${system.theme}/illustrations/right/art.png</path>
-		<path>./art/sistemas/platforms/${system.theme}_alt/illustrations/right/art.png</path>
+		<path>./art/animations/illustrations/right/art.png</path>
+		<path>./art/animations/_alt/illustrations/right/art.png</path>
 			<origin>1 0.5</origin>
 		<size>0.18 0.40</size>
-                                 <pos>0.134 0.375</pos>
+                                 <pos>0.11 0.375</pos>
 		<origin>${x.right.origin}</origin>
 		                <zIndex>998</zIndex>
 		<color>${x.right.color}</color>
@@ -430,10 +439,10 @@ author:			Polosanretro
 		
 	<image name="rightillustration_ghost1" extra="true">
 		<linearSmooth>true</linearSmooth>
-		<path>./art/sistemas/platforms/${system.theme}/illustrations/right/art.png</path>
-		<path>./art/sistemas/platforms/${system.theme}_alt/illustrations/right/art.png</path>
+		<path>./art/animations/illustrations/right/art.png</path>
+		<path>./art/animations/_alt/illustrations/right/art.png</path>
 		<size>0.18 0.40</size>
-                                 <pos>0.134 0.375</pos>
+                                 <pos>0.11 0.375</pos>
 		<origin>${x.right.origin}</origin>
 		                <zIndex>998</zIndex>
 		<color>${x.right.color}</color>
@@ -447,10 +456,10 @@ author:			Polosanretro
 
 	<image name="rightillustration" extra="true">
 		<linearSmooth>true</linearSmooth>
-		<path>./art/sistemas/platforms/${system.theme}/illustrations/right/art.png</path>
-		<path>./art/sistemas/platforms/${system.theme}_alt/illustrations/right/art.png</path>
+		<path>./art/animations/illustrations/right/art.png</path>
+		<path>./art/animations/_alt/illustrations/right/art.png</path>
 		<size>0.18 0.40</size>
-                                 <pos>0.134 0.375</pos>
+                                 <pos>0.11 0.375</pos>
 		<origin>${x.right.origin}</origin>
 		                <zIndex>998</zIndex>
 		<color>${x.right.color}</color>
@@ -466,68 +475,30 @@ author:			Polosanretro
 
 
 
-
-	<image name="rightillustration2_ghost2" extra="true">
-		<linearSmooth>true</linearSmooth>
-		<path>./art/sistemas/platforms/${system.theme}/illustrations/right2/art.png</path>
-		<path>./art/sistemas/platforms/${system.theme}_alt/illustrations/right2/art.png</path>
-			<origin>1 0.5</origin>
-		<size>0.23 0.44</size>
-                                 <pos>0.021 0.17</pos>
-		<origin>${x.right2.origin}</origin>
-		                <zIndex>996</zIndex>
-		<color>${x.right2.color}</color>
-		<colorEnd>${x.right2.colorEnd}</colorEnd>
-		<gradientType>${x.right2.gradientType}</gradientType>
-		<reflexion>${x.right2.reflexion}</reflexion>
-		<flipX>${x.right2.flip}</flipX>
-		<visible>false</visible>		
-	</image>
-
-
-	<image name="rightillustration2_ghost1" extra="true">
-		<linearSmooth>true</linearSmooth>
-		<path>./art/sistemas/platforms/${system.theme}/illustrations/right2/art.png</path>
-		<path>./art/sistemas/platforms/${system.theme}_alt/illustrations/right2/art.png</path>
-		<size>0.23 0.44</size>
-                                 <pos>0.021 0.17</pos>
-		<origin>${x.right.origin}</origin>
-		                <zIndex>996</zIndex>
-		<color>${x.right2.color}</color>
-		<color>${x.right2.color}</color>
-		<colorEnd>${x.right2.colorEnd}</colorEnd>
-		<gradientType>${x.right2.gradientType}</gradientType>
-		<reflexion>${x.right2.reflexion}</reflexion>
-		<flipX>${x.right2.flip}</flipX>
-		<visible>false</visible>		
-	</image>
-
 	<image name="rightillustration2" extra="true">
 		<linearSmooth>true</linearSmooth>
-		<path>./art/sistemas/platforms/${system.theme}/illustrations/right2/art.png</path>
-		<path>./art/sistemas/platforms/${system.theme}_alt/illustrations/right2/art.png</path>
+		<path>./art/animations/illustrations/right2/art.png</path>
+		<path>./art/animations/_alt/illustrations/right2/art.png</path>
 		<size>0.23 0.44</size>
-                                 <pos>0.021 0.17</pos>
-		<origin>${x.right2.origin}</origin>
-		                <zIndex>996</zIndex>
-		<color>${x.right2.color}</color>
-		<color>${x.right2.color}</color>
-		<colorEnd>${x.right2.colorEnd}</colorEnd>
-		<gradientType>${x.right2.gradientType}</gradientType>
-		<reflexion>${x.right2.reflexion}</reflexion>
-		<flipX>${x.right2.flip}</flipX>
-		<visible>${x.right2.visible}</visible>		
+                                 <pos>0.104 0.377</pos>
+		<origin>0.5 0.5</origin>
+		                <zIndex>996</zIndex>	
+
+                        <storyboard>
+        		<animation property="x" from="1.5" begin="0" duration="1800" mode="linear"/>
+        		<animation property="scale" to="1.0025" begin="0" autoreverse="true" duration="250" repeat="forever" mode="bump"/>
+        		<animation property="color" to="999999" begin="0" autoreverse="true" duration="5" repeat="forever" mode="linear"/>
+        		<animation property="colorEnd" to="ff9999" begin="0" autoreverse="true" duration="6000" repeat="forever" mode="linear"/>
+        		<animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+		</storyboard>
 	</image>
-
-    <image name="rightillustration2_ghost2, rightillustration2_ghost1, rightillustration2" region="eu" extra="true"></image>
-
 
 
 	   </view>
 
    <view name="screen">
       <controllerActivity name="controllerActivity">
-         <pos>0.98 0.025</pos>
+         <pos>0.03 0.025</pos>
          <size>0.085 0.025</size>
          <!--<horizontalAlignment>right</horizontalAlignment>-->
          <itemSpacing>0.003</itemSpacing>

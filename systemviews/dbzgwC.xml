@@ -53,7 +53,12 @@ author:			Polosanretro
 
 
 	   <image name="wallpapers1" extra="true">
- <visible>false</visible> 
+          <path>./medias/default/_inc/default.jpg</path>
+         <path>./medias/wallpapers/${system.theme}.jpg</path>
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+			<zIndex>1</zIndex>
 		</image> 
 
 
@@ -331,15 +336,6 @@ author:			Polosanretro
       </text>
 
 
-		<video name="md-video" extra="true">
-          <path>./medias/default/_inc/default.mp4</path>
-	  <path>./medias/videos/${system.theme}.mp4</path>
-         <pos>0 0</pos>
-         <size>1 1</size>
-         <origin>0 0</origin>
-         <delay>0</delay>
-		 <zIndex>1</zIndex>
-		 </video>
 
 		<video name="backgroundvideo" extra="true">
           <path>./medias/default/_inc/noise.mp4</path>
@@ -399,7 +395,7 @@ author:			Polosanretro
 
      <carousel name="systemcarousel">
         <type>vertical_wheel</type>
-        <pos>0 -0.01</pos>
+        <pos>0.08 -0.01</pos>
 		<size>0.34 1</size>
         <logoScale>1.559895832</logoScale>
         <logoSize>0.13 0.13</logoSize>
@@ -414,8 +410,8 @@ author:			Polosanretro
 
 
 		<image name="logo, logo1">
-          <path>./medias/default/_inc/system.png</path>
-	<path>./medias/logo/DBZboules/${system.theme}.png</path>
+          <path>./medias/capsules/default.png</path>
+	<path>./medias/capsules/${system.theme}.png</path>
 			<linearSmooth>true</linearSmooth>
 
 	</image>

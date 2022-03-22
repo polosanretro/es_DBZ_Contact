@@ -52,6 +52,7 @@ author:			Polosanretro
 <view name="system">
 
 
+
 	   <image name="wallpapers1" extra="true">
  <visible>false</visible> 
 		</image> 
@@ -305,6 +306,7 @@ author:			Polosanretro
 		<zIndex>42</zIndex>
       </text>
 
+
 		<text name="info6" extra="true">
 <visible>false</visible>
 		</text>
@@ -394,6 +396,7 @@ author:			Polosanretro
 
 
 
+
       <carousel name="systemcarousel">
         <type>vertical_wheel</type>
 		<origin>1 0</origin>
@@ -415,8 +418,6 @@ author:			Polosanretro
           <path>./medias/capsules/default.png</path>
 	<path>./medias/capsules/${system.theme}.png</path>
 			<linearSmooth>true</linearSmooth>
-
-
 
 	</image>
 

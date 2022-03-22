@@ -7,10 +7,7 @@ author:			Polosanretro
 <theme>
 <formatVersion>7</formatVersion>
 
-
-
 <include>./../desc/${system.theme}/custom.xml</include>
-
 
 	<variables>
   
@@ -45,6 +42,10 @@ author:			Polosanretro
 	<include>./SETTINGS.xml</include>
 	
 	<include>./art/animations/animation_set.xml</include>
+
+
+
+
 
 
 
@@ -92,12 +93,15 @@ author:			Polosanretro
           <path>./medias/capsulenuage/default.png</path>
           <path>./medias/capsulenuage/${system.theme}.png</path>
          <zIndex>43</zIndex>
-<storyboard>
+	  <sound>./medias/sound/Nimbusdbz.wav</sound>
+<delay>0</delay>
+		<storyboard>
 				<animation property="scale" from="0" to="1" begin="120" duration="1475" mode="EaseOut"/>
         		<animation property="y" to="0.5" begin="2800" autoreverse="true" duration="7200" repeat="forever" mode="easyIn"/>
         		<animation property="x" to="0.5" begin="300" autoreverse="true" duration="8450" repeat="forever" mode="easyIn"/>
 
 		</storyboard>
+
       </image>
 	
 
@@ -177,6 +181,14 @@ author:			Polosanretro
          <zIndex>41</zIndex>
       </image>
 
+	   <image name="maskcad" extra="true">
+         <origin>0.5 0.5</origin>
+		<pos>0.185 0.437</pos>
+         <size>0.357 0.215</size>
+         <path>./medias/mask.png</path>
+         <zIndex>40</zIndex>
+      </image>
+
 	   <image name="pcadredia" extra="true">
          <origin>0.5 0.5</origin>
 		<pos>0.3147 0.458</pos>
@@ -199,13 +211,17 @@ author:			Polosanretro
 		</storyboard>
       </image>
 
-	   <image name="maskcad" extra="true">
-         <origin>0.5 0.5</origin>
-		<pos>0.185 0.437</pos>
-         <size>0.357 0.215</size>
-         <path>./medias/mask.png</path>
-         <zIndex>40</zIndex>
-      </image>
+<text name="info2" extra="true">
+   		<fontPath>./medias/fuentes/Dragon Ball.ttf</fontPath>
+        <color>39CAD5</color>
+        <alignment>left</alignment>
+        <fontSize>0.023</fontSize>
+        <lineSpacing>1</lineSpacing>
+		<size>0.35 0</size>
+		<pos>0.035 0.4</pos>
+		<zIndex>0</zIndex>
+      </text>
+
 	<text name="info1" extra="true">
 		<fontPath>./medias/fuentes/Dragon Ball.ttf</fontPath>
 		<color>32CD32</color>
@@ -226,24 +242,12 @@ author:			Polosanretro
          <path>./medias/capsulecorps0.png</path>
          <zIndex>40</zIndex>
 		<storyboard>
-        		<animation property="y" from="-1.5" begin="0.9" duration="2000" mode="linear"/>
+        		<animation property="y" from="-1.5" begin="0.3" duration="2000" mode="linear"/>
         		<animation property="scale" to="1.02" begin="0" autoreverse="true" duration="300" repeat="forever" mode="easyIn"/>
-        		<animation property="rotation" to="1.02" begin="90" autoreverse="true" duration="300" repeat="forever" mode="easyIn"/>
+        		<animation property="rotation" to="1.5" begin="90" autoreverse="true" duration="300" repeat="forever" mode="easyIn"/>
         		<animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
 		</storyboard>
       </image>
-
-
-<text name="info2" extra="true">
-   		<fontPath>./medias/fuentes/Dragon Ball.ttf</fontPath>
-        <color>39CAD5</color>
-        <alignment>left</alignment>
-        <fontSize>0.023</fontSize>
-        <lineSpacing>1</lineSpacing>
-		<size>0.35 0</size>
-		<pos>0.035 0.4</pos>
-		<zIndex>0</zIndex>
-      </text>
 
 
 	<text name="info3" extra="true">
@@ -306,6 +310,7 @@ author:			Polosanretro
 		<zIndex>42</zIndex>
       </text>
 
+
 		<text name="info6" extra="true">
 <visible>false</visible>
 		</text>
@@ -330,6 +335,8 @@ author:			Polosanretro
 <visible>false</visible>
       </text>
 
+
+
 		<video name="backgroundvideo" extra="true">
           <path>./medias/default/_inc/noise.mp4</path>
 	     <path>{random}</path> 
@@ -343,8 +350,12 @@ author:			Polosanretro
       <roundCorners>0.02</roundCorners>
 		 <zIndex>39</zIndex>
 		 </video>
-	  
-	  
+
+    <image name="randomImage" extra="true">
+ <visible>false</visible> 
+    </image>
+
+
 	   <image name="Njeux" extra="true">
          <origin>0.5 0.5</origin>
 		<pos>0.21 0.95</pos>
@@ -378,6 +389,8 @@ author:			Polosanretro
 		</storyboard>
     <zIndex>1002</zIndex>	     
 </text>
+
+
 
 
       <carousel name="systemcarousel">
@@ -480,7 +493,6 @@ author:			Polosanretro
         		<animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
 		</storyboard>
 	</image>
-
 
 
 	   </view>

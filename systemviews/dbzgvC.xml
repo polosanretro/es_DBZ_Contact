@@ -399,7 +399,7 @@ author:			Polosanretro
 
      <carousel name="systemcarousel">
         <type>vertical_wheel</type>
-        <pos>0 -0.01</pos>
+        <pos>0.08 -0.01</pos>
 		<size>0.34 1</size>
         <logoScale>1.559895832</logoScale>
         <logoSize>0.13 0.13</logoSize>
@@ -414,8 +414,8 @@ author:			Polosanretro
 
 
 		<image name="logo, logo1">
-          <path>./medias/default/_inc/system.png</path>
-	<path>./medias/logo/DBZboules/${system.theme}.png</path>
+          <path>./medias/capsules/default.png</path>
+	<path>./medias/capsules/${system.theme}.png</path>
 			<linearSmooth>true</linearSmooth>
 
 	</image>
