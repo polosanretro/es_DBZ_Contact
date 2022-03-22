@@ -293,6 +293,8 @@ Opaque                                         Translucide                      
         <include subset="SYSTEMS_VUE" name="dbz-videos-gauche-boules">./systemviews/dbzgv.xml</include>
         <include subset="SYSTEMS_VUE" name="dbz-wallpapers-droite-capsules">./systemviews/dbzdwC.xml</include>
         <include subset="SYSTEMS_VUE" name="dbz-videos-droite-capsules">./systemviews/dbzdvC.xml</include>
+        <include subset="SYSTEMS_VUE" name="dbz-wallpapers-gauche-capsules">./systemviews/dbzgwC.xml</include>
+        <include subset="SYSTEMS_VUE" name="dbz-videos-gauche-capsules">./systemviews/dbzgvC.xml</include>
        
   </subset> 
 
@@ -302,6 +304,19 @@ Opaque                                         Translucide                      
 		<include subset="gamelist_logo" name="Off"></include>
 	</subset>
 
+
+
+  <subset name="Ambiances">
+   <include name="no"/>
+   <include name="DBZ1">./sonores/DBZ1.xml</include>
+   <include name="DBZ2">./sonores/DBZ2.xml</include>
+   <include name="DBZ3">./sonores/DbZ3.xml</include>
+   <include name="DBZ4">./sonores/DBZ4.xml</include>
+   <include name="DBZ5">./sonores/DBZ5.xml</include>
+   <include name="DBZ6">./sonores/DBZ6.xml</include>
+   <include name="DBZ7">./sonores/DBZ7.xml</include>
+   <include name="DBZ8">./sonores/DBZ8.xml</include>
+  </subset>
 
  	                                                
   <subset name="bouton-menu">
