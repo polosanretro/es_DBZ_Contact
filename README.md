@@ -6,3 +6,4 @@ Y manque quelques systèmes nuages Sangoku, que je mettrais à jour régulièrem
 Systèmes capsules...
 Les videos systemes maquantent sont dispo ici :
 https://drive.google.com/drive/folders/1X-zoBMMdIj9jMtEKECFOwVqjljRzcKs4?usp=sharing
+A placer dans medias/videos/
